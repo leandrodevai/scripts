@@ -9,4 +9,7 @@ set -eo pipefail
 . /venv/main/bin/activate
 
 # Install the required packages
-pip install transformers[sentencepiece] datasets evaluate wandb trl peft trackio huggingface_hub bitsandbytes accelerate ipykernel ipywidgets scikit-learn
+pip install transformers[sentencepiece] datasets evaluate wandb trl peft trackio huggingface_hub bitsandbytes accelerate
+
+# Install support packages
+pip install ipykernel ipywidgets scikit-learn rouge-score bert-score pandas numpy lighteval pytest pytest-cov tqdm
